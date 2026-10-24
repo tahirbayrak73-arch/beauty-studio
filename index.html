@@ -400,7 +400,8 @@ dialog[open]{animation:pop .45s var(--ease)}
 @media (max-width:860px){
   .links,.nav>.btn{display:none}
   .burger{display:grid}
-  .links.open{display:flex;position:fixed;inset:80px 0 0;flex-direction:column;gap:0;padding:24px 16px;background:var(--ivory);animation:menu .5s var(--ease)}
+  /* .header.solid'deki backdrop-filter, fixed menüyü header'a göre konumlandırır; bu yüzden yükseklik açıkça ekran boyu verilir */
+  .links.open{display:flex;position:fixed;top:80px;left:0;right:0;height:calc(100vh - 80px);height:calc(100dvh - 80px);overflow-y:auto;flex-direction:column;gap:0;padding:24px 16px;background:var(--ivory);animation:menu .5s var(--ease)}
   @keyframes menu{from{opacity:0;transform:translateY(-12px)}}
   .links.open a{font:400 34px var(--serif);letter-spacing:0;color:var(--ink);padding:14px 0;border-bottom:1px solid var(--line)}
   .links.open a::after{display:none}
