@@ -1,0 +1,9 @@
+# Statik site: derleme adımı yok, ana klasör yayınlanır
+[build]
+  publish = "."
+
+# Görseller ve videolar uzun süre önbellekte kalsın (site daha hızlı açılır)
+[[headers]]
+  for = "/media/*"
+  [headers.values]
+    Cache-Control = "public, max-age=2592000"
