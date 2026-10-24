@@ -1,0 +1,6 @@
+# Büyük video dosyaları (GitHub'a yüklenmiyor)
+*.mp4
+
+# Sistem dosyaları
+desktop.ini
+Thumbs.db
