@@ -1,5 +1,5 @@
-# Büyük video dosyaları (GitHub'a yüklenmiyor)
-*.mp4
+# Ana klasördeki büyük orijinal videolar (GitHub'a yüklenmiyor; sitede media/ içindeki küçültülmüş sürümler kullanılıyor)
+/*.mp4
 
 # Sistem dosyaları
 desktop.ini
